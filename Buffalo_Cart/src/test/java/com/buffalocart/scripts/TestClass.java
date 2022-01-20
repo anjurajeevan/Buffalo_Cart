@@ -60,6 +60,7 @@ public class TestClass extends TestBase {
 	 	    	
 	 	    	String password=String.valueOf(ExcelUtilities.getNumericCellData(2, 1));
 	 	    	objLogin.setUserName(username);
+			System.out.println("username");    
 	 	    	objLogin.setUserPassword(password);
 	 	    	System.out.println("password");
 	 	    	objLogin.clickLogin();
