@@ -61,6 +61,7 @@ public class TestClass extends TestBase {
 	 	    	String password=String.valueOf(ExcelUtilities.getNumericCellData(2, 1));
 	 	    	objLogin.setUserName(username);
 	 	    	objLogin.setUserPassword(password);
+	 	    	System.out.println("password");
 	 	    	objLogin.clickLogin();
 	 	    	Assert.assertEquals(objLogin.getAlertMsg(), AutomationConstants.EXPECTEDALERTMSG);
 	 	    	
